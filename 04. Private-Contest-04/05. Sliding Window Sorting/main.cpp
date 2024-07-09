@@ -40,8 +40,8 @@ int main(void) {
  	the permutation P. */
 	min_suffix[n - k + 1] = P[n - k + 1];
 	
-	/*	Loop starts from n - k + 2 because we have already initialized min_suffix[n - k + 1]. Need to fill the rest of the min_suffix array to capture the 
-	minimum value from the current position to the end of the array. */
+	/* Loop starts from n - k + 2 because we have already initialized min_suffix[n - k + 1]. Need to fill the rest of the min_suffix array to capture
+ 	minimum value from the current position to the end of the array. */
   	for (int i = n - k + 2; i <= n; i++) { min_suffix[i] = min(min_suffix[i - 1], P[i]); }
     
 	// Initialize idx to last possible starting pos. where a segment of length K can be sorted. 
