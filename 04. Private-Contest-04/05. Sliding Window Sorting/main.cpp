@@ -1,4 +1,12 @@
 // [Link]="https://www.hackerrank.com/contests/iiit-hyd-private-contest-4/challenges/sliding-window-sorting"
+// Overall Time Complexity
+// Reading Input: O(n)
+// Building next_greater: O(n)
+// Building min_suffix: O(n)
+// Finding idx: O(n)
+// Sorting the Segment: O(nlogn)
+// Outputting the Result: O(n)
+// Combining these, the overall time complexity of the algorithm is: O(nlogn) [This is efficient and optimal]
 
 #include<bits/stdc++.h>
 using namespace std;
